@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a165fb2c-7f92-4191-9e0c-9d4c30ac31c8">
+  <producedTypes>
+    <objectType typeId="52c32dc3-e8f3-415a-96ef-83dd2f43fc5c" valueTypeId="c92a372f-57da-44c3-a15f-3005057b5dc9"/>
+    <refType typeId="22a8ac63-a82b-43a5-9351-8f5d66795711" valueTypeId="447cb1b1-bdb7-481e-85e5-900ab4731817"/>
+    <selectionType typeId="6dd9ab12-d952-4076-b667-85faa4c3c8f5" valueTypeId="c2873dc7-e0a4-4348-9c8d-065669ac34bb"/>
+    <listType typeId="92e097a2-65a9-433d-b338-89236d6d11d8" valueTypeId="6841c6bc-b982-4e61-a5b4-0ba62dc509c6"/>
+    <managerType typeId="217a5b8f-78bd-47a5-acb5-cc17cd0a8661" valueTypeId="bedd9b25-058d-4048-9a20-a92804b925c2"/>
+  </producedTypes>
+  <name>Изм_КонтактныеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контактные лица</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Изм_КонтактныеЛица.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Изм_КонтактныеЛица.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Конатктное лицо</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Контактные лица</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Изм_КонтактныеЛица.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="98c6c51e-e6d8-46a0-a7d9-6e9b8c3832be">
+    <name>КонтактныйТелефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактный телефон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e5064c93-3a31-4410-ad34-fba92a27ddd2">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Изм_Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fda47eda-ae4e-4948-8d06-385d2ca4e470">
+    <name>ДействуетНаОсновании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует на основании</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="aed5d505-e24d-42d2-8cb5-a1e4f3048a33">
+    <name>Заметка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заметка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="cb2b49ed-e091-46f2-985f-4ff6e6074c8e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
